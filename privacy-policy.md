@@ -137,3 +137,80 @@
     <ul>
       <li>Create and manage your account (Sign In/Sign Up)</li>
       <li>Save and sync your Sudoku progress across devices (if enabled)</li>
+      <li>Provide app functionality and improve stability (bug fixes, crash investigation)</li>
+      <li>Respond to support requests</li>
+    </ul>
+
+    <h2>4. Where your data is stored (Supabase / cloud services)</h2>
+    <p>
+      If the App uses Supabase or other cloud services, your data may be stored and processed on secure servers provided by:
+    </p>
+    <ul>
+      <li><strong>Supabase</strong> (authentication and database services)</li>
+    </ul>
+    <p class="muted">
+      These providers process data on our behalf to deliver the app’s core functionality.
+    </p>
+
+    <h2>5. Sharing of information</h2>
+    <p>We do <strong>not</strong> sell your personal information.</p>
+    <p>We may share limited data only in these cases:</p>
+    <ul>
+      <li><strong>Service providers</strong> (e.g., Supabase) to operate the App</li>
+      <li><strong>Legal requirements</strong> if we must comply with law or protect rights/safety</li>
+    </ul>
+
+    <h2>6. Data retention</h2>
+    <p>We keep your information only as long as needed to:</p>
+    <ul>
+      <li>Provide the App features (account + saved progress)</li>
+      <li>Meet legal and security obligations</li>
+    </ul>
+    <p>
+      If you delete your account (or request deletion), we will delete or anonymize your stored personal data within a reasonable time,
+      unless we must keep some data for legal reasons.
+    </p>
+
+    <h2>7. Security</h2>
+    <p>
+      We use reasonable technical and organizational measures to protect your data. However, no system is 100% secure,
+      and we cannot guarantee absolute security.
+    </p>
+
+    <h2>8. Children’s privacy</h2>
+    <p>
+      The App is not intended for children under <strong>13</strong> (or the minimum age required in your country) without parental permission.
+      If you believe a child has provided personal data, contact us and we will delete it.
+    </p>
+
+    <h2>9. Your rights and choices</h2>
+    <p>Depending on your location, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we store about you</li>
+      <li>Request correction or deletion</li>
+      <li>Withdraw consent (where applicable)</li>
+    </ul>
+    <p>
+      To make a request, contact us at:
+      <a href="mailto:altay.said@dataklub.xyz">altay.said@dataklub.xyz</a>
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. If changes are significant, we will update the effective date and may notify you inside the App.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      If you have questions or requests about this Privacy Policy, contact:
+      <a href="mailto:altay.said@dataklub.xyz">altay.said@dataklub.xyz</a>
+    </p>
+
+    <footer>
+      <p class="muted">
+        Tip for Google Play: host this page publicly (e.g., GitHub Pages) and use the GitHub Pages URL in Play Console (avoid GitHub “blob” links).
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
