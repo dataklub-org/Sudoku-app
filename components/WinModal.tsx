@@ -31,6 +31,7 @@ export function WinModal({
 }: WinModalProps) {
   const colorScheme = useColorScheme();
   const isDark = colorScheme === 'dark';
+  const safeDifficulty = difficulty || 'medium';
 
   useEffect(() => {
     if (visible && Platform.OS !== 'web') {
@@ -128,12 +129,12 @@ export function WinModal({
                 ]}>
                 Difficulty
               </Text>
-              <Text
-                style={[
-                  styles.statValue,
-                  isDark ? styles.statValueDark : styles.statValueLight,
-                ]}>
-                {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
+                <Text
+                  style={[
+                    styles.statValue,
+                    isDark ? styles.statValueDark : styles.statValueLight,
+                  ]}>
+                {safeDifficulty.charAt(0).toUpperCase() + safeDifficulty.slice(1)}
               </Text>
             </View>
           </View>

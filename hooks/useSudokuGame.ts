@@ -123,6 +123,7 @@ export function useSudokuGame() {
       if (!gameState.selectedCell) return;
 
       const { row, col } = gameState.selectedCell;
+      if (!gameState.initialBoard?.[row] || !gameState.board?.[row]) return;
       if (gameState.initialBoard[row][col] !== null) return;
 
       setGameState((prev) => {
@@ -152,6 +153,7 @@ export function useSudokuGame() {
           const newBoard = copyBoard(prev.board);
           newBoard[row][col] = num;
 
+          if (!prev.solution?.[row]) return prev;
           if (newBoard[row][col] !== prev.solution[row][col]) {
             newState.mistakes = prev.mistakes + 1;
           }
@@ -179,6 +181,7 @@ export function useSudokuGame() {
     if (!gameState.selectedCell) return;
 
     const { row, col } = gameState.selectedCell;
+    if (!gameState.initialBoard?.[row] || !gameState.board?.[row]) return;
     if (gameState.initialBoard[row][col] !== null) return;
 
     setGameState((prev) => {
@@ -203,10 +206,13 @@ export function useSudokuGame() {
       return;
 
     const { row, col } = gameState.selectedCell;
+    if (!gameState.initialBoard?.[row] || !gameState.board?.[row]) return;
     if (gameState.initialBoard[row][col] !== null) return;
 
     setGameState((prev) => {
       saveToHistory(prev);
+
+      if (!prev.solution?.[row]) return prev;
 
       const newBoard = copyBoard(prev.board);
       newBoard[row][col] = prev.solution[row][col];
@@ -241,6 +247,7 @@ export function useSudokuGame() {
     if (historyIndex < 0) return;
 
     const entry = history[historyIndex];
+    if (!entry) return;
     setGameState((prev) => ({
       ...prev,
       board: copyBoard(entry.board),
@@ -259,6 +266,7 @@ export function useSudokuGame() {
     if (historyIndex >= history.length - 1) return;
 
     const entry = history[historyIndex + 1];
+    if (!entry) return;
     setGameState((prev) => ({
       ...prev,
       board: copyBoard(entry.board),
